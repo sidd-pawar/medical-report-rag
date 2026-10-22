@@ -1,0 +1,56 @@
+doc_id,patient_id,doc_type,date,issuer,file
+P001-LAB-2023-06-30,P001,lab_report,2023-06-30,Kestrel Pathology,patients/P001/2023-06-30_lab_report_kestrel.pdf
+P001-RX-2023-07-25,P001,prescription,2023-07-25,Riverbend Medical Clinic,patients/P001/2023-07-25_prescription.pdf
+P001-NOTE-2023-07-25,P001,clinic_note,2023-07-25,Riverbend Medical Clinic,patients/P001/2023-07-25_clinic_note.pdf
+P001-LAB-2023-10-06,P001,lab_report,2023-10-06,Kestrel Pathology,patients/P001/2023-10-06_lab_report_kestrel.pdf
+P001-RX-2023-10-16,P001,prescription,2023-10-16,Riverbend Medical Clinic,patients/P001/2023-10-16_prescription.pdf
+P001-LAB-2024-01-02,P001,lab_report,2024-01-02,Kestrel Pathology,patients/P001/2024-01-02_lab_report_kestrel.pdf
+P001-LAB-2024-04-06,P001,lab_report,2024-04-06,Kestrel Pathology,patients/P001/2024-04-06_lab_report_kestrel.pdf
+P001-LAB-2024-07-01,P001,lab_report,2024-07-01,Kestrel Pathology,patients/P001/2024-07-01_lab_report_kestrel.pdf
+P001-RX-2024-07-15,P001,prescription,2024-07-15,Riverbend Medical Clinic,patients/P001/2024-07-15_prescription.pdf
+P001-NOTE-2024-07-15,P001,clinic_note,2024-07-15,Riverbend Medical Clinic,patients/P001/2024-07-15_clinic_note.pdf
+P001-LAB-2024-09-29,P001,lab_report,2024-09-29,Bluegum Diagnostics,patients/P001/2024-09-29_lab_report_bluegum.pdf
+P001-LAB-2025-01-02,P001,lab_report,2025-01-02,Bluegum Diagnostics,patients/P001/2025-01-02_lab_report_bluegum.pdf
+P001-NOTE-2025-01-13,P001,clinic_note,2025-01-13,Riverbend Medical Clinic,patients/P001/2025-01-13_clinic_note.pdf
+P001-LAB-2025-04-03,P001,lab_report,2025-04-03,Bluegum Diagnostics,patients/P001/2025-04-03_lab_report_bluegum.pdf
+P001-LAB-2025-07-07,P001,lab_report,2025-07-07,Bluegum Diagnostics,patients/P001/2025-07-07_lab_report_bluegum.pdf
+P001-RX-2025-07-18,P001,prescription,2025-07-18,Riverbend Medical Clinic,patients/P001/2025-07-18_prescription.pdf
+P001-NOTE-2025-07-18,P001,clinic_note,2025-07-18,Riverbend Medical Clinic,patients/P001/2025-07-18_clinic_note.pdf
+P001-LAB-2025-09-29,P001,lab_report,2025-09-29,Bluegum Diagnostics,patients/P001/2025-09-29_lab_report_bluegum.pdf
+P001-LAB-2025-12-29,P001,lab_report,2025-12-29,Bluegum Diagnostics,patients/P001/2025-12-29_lab_report_bluegum.pdf
+P001-LAB-2026-04-01,P001,lab_report,2026-04-01,Bluegum Diagnostics,patients/P001/2026-04-01_lab_report_bluegum.pdf
+P002-LAB-2023-10-08,P002,lab_report,2023-10-08,Kestrel Pathology,patients/P002/2023-10-08_lab_report_kestrel.pdf
+P002-RX-2023-10-26,P002,prescription,2023-10-26,Riverbend Medical Clinic,patients/P002/2023-10-26_prescription.pdf
+P002-NOTE-2023-10-26,P002,clinic_note,2023-10-26,Riverbend Medical Clinic,patients/P002/2023-10-26_clinic_note.pdf
+P002-LAB-2024-01-07,P002,lab_report,2024-01-07,Kestrel Pathology,patients/P002/2024-01-07_lab_report_kestrel.pdf
+P002-LAB-2024-04-10,P002,lab_report,2024-04-10,Kestrel Pathology,patients/P002/2024-04-10_lab_report_kestrel.pdf
+P002-LAB-2024-08-09,P002,lab_report,2024-08-09,Kestrel Pathology,patients/P002/2024-08-09_lab_report_kestrel.pdf
+P002-RX-2024-08-26,P002,prescription,2024-08-26,Riverbend Medical Clinic,patients/P002/2024-08-26_prescription.pdf
+P002-NOTE-2024-08-26,P002,clinic_note,2024-08-26,Riverbend Medical Clinic,patients/P002/2024-08-26_clinic_note.pdf
+P002-LAB-2024-11-05,P002,lab_report,2024-11-05,Kestrel Pathology,patients/P002/2024-11-05_lab_report_kestrel.pdf
+P002-LAB-2025-02-04,P002,lab_report,2025-02-04,Kestrel Pathology,patients/P002/2025-02-04_lab_report_kestrel.pdf
+P002-RX-2025-02-24,P002,prescription,2025-02-24,Riverbend Medical Clinic,patients/P002/2025-02-24_prescription.pdf
+P002-NOTE-2025-02-24,P002,clinic_note,2025-02-24,Riverbend Medical Clinic,patients/P002/2025-02-24_clinic_note.pdf
+P002-LAB-2025-05-12,P002,lab_report,2025-05-12,Kestrel Pathology,patients/P002/2025-05-12_lab_report_kestrel.pdf
+P002-NOTE-2025-05-18,P002,clinic_note,2025-05-18,Riverbend Medical Clinic,patients/P002/2025-05-18_clinic_note.pdf
+P002-LAB-2025-09-08,P002,lab_report,2025-09-08,Kestrel Pathology,patients/P002/2025-09-08_lab_report_kestrel.pdf
+P002-LAB-2026-01-08,P002,lab_report,2026-01-08,Kestrel Pathology,patients/P002/2026-01-08_lab_report_kestrel.pdf
+P002-LAB-2026-05-07,P002,lab_report,2026-05-07,Kestrel Pathology,patients/P002/2026-05-07_lab_report_kestrel.pdf
+P003-LAB-2024-02-12,P003,lab_report,2024-02-12,Bluegum Diagnostics,patients/P003/2024-02-12_lab_report_bluegum.pdf
+P003-RX-2024-02-20,P003,prescription,2024-02-20,Riverbend Medical Clinic,patients/P003/2024-02-20_prescription.pdf
+P003-NOTE-2024-02-20,P003,clinic_note,2024-02-20,Riverbend Medical Clinic,patients/P003/2024-02-20_clinic_note.pdf
+P003-LAB-2024-04-10,P003,lab_report,2024-04-10,Bluegum Diagnostics,patients/P003/2024-04-10_lab_report_bluegum.pdf
+P003-RX-2024-04-24,P003,prescription,2024-04-24,Riverbend Medical Clinic,patients/P003/2024-04-24_prescription.pdf
+P003-LAB-2024-06-14,P003,lab_report,2024-06-14,Bluegum Diagnostics,patients/P003/2024-06-14_lab_report_bluegum.pdf
+P003-RX-2024-06-20,P003,prescription,2024-06-20,Riverbend Medical Clinic,patients/P003/2024-06-20_prescription.pdf
+P003-NOTE-2024-06-20,P003,clinic_note,2024-06-20,Riverbend Medical Clinic,patients/P003/2024-06-20_clinic_note.pdf
+P003-LAB-2024-09-15,P003,lab_report,2024-09-15,Bluegum Diagnostics,patients/P003/2024-09-15_lab_report_bluegum.pdf
+P003-LAB-2024-12-16,P003,lab_report,2024-12-16,Bluegum Diagnostics,patients/P003/2024-12-16_lab_report_bluegum.pdf
+P003-LAB-2025-03-11,P003,lab_report,2025-03-11,Bluegum Diagnostics,patients/P003/2025-03-11_lab_report_bluegum.pdf
+P003-LAB-2025-06-13,P003,lab_report,2025-06-13,Bluegum Diagnostics,patients/P003/2025-06-13_lab_report_bluegum.pdf
+P003-RX-2025-06-22,P003,prescription,2025-06-22,Riverbend Medical Clinic,patients/P003/2025-06-22_prescription.pdf
+P003-NOTE-2025-06-22,P003,clinic_note,2025-06-22,Riverbend Medical Clinic,patients/P003/2025-06-22_clinic_note.pdf
+P003-LAB-2025-09-09,P003,lab_report,2025-09-09,Bluegum Diagnostics,patients/P003/2025-09-09_lab_report_bluegum.pdf
+P003-NOTE-2025-09-23,P003,clinic_note,2025-09-23,Riverbend Medical Clinic,patients/P003/2025-09-23_clinic_note.pdf
+P003-LAB-2025-11-10,P003,lab_report,2025-11-10,Bluegum Diagnostics,patients/P003/2025-11-10_lab_report_bluegum.pdf
+P003-LAB-2026-02-14,P003,lab_report,2026-02-14,Bluegum Diagnostics,patients/P003/2026-02-14_lab_report_bluegum.pdf

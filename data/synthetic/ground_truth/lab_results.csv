@@ -1,0 +1,218 @@
+doc_id,patient_id,collected_date,lab,test_code,test_name_printed,value_printed,unit_printed,ref_low,ref_high,flag,value_standard,unit_standard
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,HBA1C,HbA1c,8.9,%,4.0,6.0,H,8.9,%
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,GLU_F,Fasting Glucose,10.1,mmol/L,3.0,5.4,H,10.1,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,CREAT,Creatinine,92,µmol/L,60,110,,92,µmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,EGFR,eGFR,74,mL/min/1.73m²,60,,,74,mL/min/1.73m²
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,UACR,Urine Albumin/Creatinine Ratio,3.1,mg/mmol,,2.5,H,3.1,mg/mmol
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,NA,Sodium,137,mmol/L,135,145,,137,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,K,Potassium,4.4,mmol/L,3.5,5.2,,4.4,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,CHOL,Total Cholesterol,5.4,mmol/L,,5.5,,5.4,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,LDL,LDL Cholesterol,3.2,mmol/L,,3.0,H,3.2,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,HDL,HDL Cholesterol,1.0,mmol/L,1.0,,,1.0,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,TRIG,Triglycerides,2.4,mmol/L,,2.0,H,2.4,mmol/L
+P001-LAB-2023-06-30,P001,2023-06-30,Kestrel Pathology,HB,Haemoglobin,141,g/L,130,180,,141,g/L
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,HBA1C,HbA1c,8.4,%,4.0,6.0,H,8.4,%
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,GLU_F,Fasting Glucose,9.2,mmol/L,3.0,5.4,H,9.2,mmol/L
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,CREAT,Creatinine,94,µmol/L,60,110,,94,µmol/L
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,EGFR,eGFR,73,mL/min/1.73m²,60,,,73,mL/min/1.73m²
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,NA,Sodium,140,mmol/L,135,145,,140,mmol/L
+P001-LAB-2023-10-06,P001,2023-10-06,Kestrel Pathology,K,Potassium,4.4,mmol/L,3.5,5.2,,4.4,mmol/L
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,HBA1C,HbA1c,7.6,%,4.0,6.0,H,7.6,%
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,GLU_F,Fasting Glucose,8.2,mmol/L,3.0,5.4,H,8.2,mmol/L
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,CREAT,Creatinine,96,µmol/L,60,110,,96,µmol/L
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,EGFR,eGFR,72,mL/min/1.73m²,60,,,72,mL/min/1.73m²
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,UACR,Urine Albumin/Creatinine Ratio,3.6,mg/mmol,,2.5,H,3.6,mg/mmol
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,NA,Sodium,140,mmol/L,135,145,,140,mmol/L
+P001-LAB-2024-01-02,P001,2024-01-02,Kestrel Pathology,K,Potassium,4.5,mmol/L,3.5,5.2,,4.5,mmol/L
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,HBA1C,HbA1c,7.1,%,4.0,6.0,H,7.1,%
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,GLU_F,Fasting Glucose,7.4,mmol/L,3.0,5.4,H,7.4,mmol/L
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,CREAT,Creatinine,97,µmol/L,60,110,,97,µmol/L
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,EGFR,eGFR,69,mL/min/1.73m²,60,,,69,mL/min/1.73m²
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,NA,Sodium,138,mmol/L,135,145,,138,mmol/L
+P001-LAB-2024-04-06,P001,2024-04-06,Kestrel Pathology,K,Potassium,4.5,mmol/L,3.5,5.2,,4.5,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,HBA1C,HbA1c,6.8,%,4.0,6.0,H,6.8,%
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,GLU_F,Fasting Glucose,7.1,mmol/L,3.0,5.4,H,7.1,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,CREAT,Creatinine,99,µmol/L,60,110,,99,µmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,EGFR,eGFR,69,mL/min/1.73m²,60,,,69,mL/min/1.73m²
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,UACR,Urine Albumin/Creatinine Ratio,4.2,mg/mmol,,2.5,H,4.2,mg/mmol
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,K,Potassium,5.8,mmol/L,3.5,5.2,H,5.8,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,CHOL,Total Cholesterol,5.6,mmol/L,,5.5,H,5.6,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,LDL,LDL Cholesterol,3.4,mmol/L,,3.0,H,3.4,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,HDL,HDL Cholesterol,1.0,mmol/L,1.0,,,1.0,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,TRIG,Triglycerides,2.5,mmol/L,,2.0,H,2.5,mmol/L
+P001-LAB-2024-07-01,P001,2024-07-01,Kestrel Pathology,HB,Haemoglobin,139,g/L,130,180,,139,g/L
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,HBA1C,HbA1c,54,mmol/mol,20,42,H,7.1,%
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,GLU_F,Glucose (fasting),7.0,mmol/L,3.0,5.4,H,7.0,mmol/L
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,CREAT,Creatinine,101,µmol/L,60,110,,101,µmol/L
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,EGFR,Estimated GFR,67,mL/min/1.73m²,60,,,67,mL/min/1.73m²
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2024-09-29,P001,2024-09-29,Bluegum Diagnostics,K,Potassium,4.7,mmol/L,3.5,5.2,,4.7,mmol/L
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,HBA1C,HbA1c,54,mmol/mol,20,42,H,7.1,%
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,GLU_F,Glucose (fasting),7.4,mmol/L,3.0,5.4,H,7.4,mmol/L
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,CREAT,Creatinine,139,µmol/L,60,110,H,139,µmol/L
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,EGFR,Estimated GFR,51,mL/min/1.73m²,60,,L,51,mL/min/1.73m²
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,UACR,Urine ACR,4.6,mg/mmol,,2.5,H,4.6,mg/mmol
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,NA,Sodium,140,mmol/L,135,145,,140,mmol/L
+P001-LAB-2025-01-02,P001,2025-01-02,Bluegum Diagnostics,K,Potassium,4.7,mmol/L,3.5,5.2,,4.7,mmol/L
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,HBA1C,HbA1c,62,mmol/mol,20,42,H,7.8,%
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,GLU_F,Glucose (fasting),8.2,mmol/L,3.0,5.4,H,8.2,mmol/L
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,CREAT,Creatinine,109,µmol/L,60,110,,109,µmol/L
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,EGFR,Estimated GFR,64,mL/min/1.73m²,60,,,64,mL/min/1.73m²
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2025-04-03,P001,2025-04-03,Bluegum Diagnostics,K,Potassium,4.6,mmol/L,3.5,5.2,,4.6,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,HBA1C,HbA1c,68,mmol/mol,20,42,H,8.4,%
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,GLU_F,Glucose (fasting),8.9,mmol/L,3.0,5.4,H,8.9,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,CREAT,Creatinine,111,µmol/L,60,110,H,111,µmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,EGFR,Estimated GFR,62,mL/min/1.73m²,60,,,62,mL/min/1.73m²
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,UACR,Urine ACR,5.0,mg/mmol,,2.5,H,5.0,mg/mmol
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,K,Potassium,4.5,mmol/L,3.5,5.2,,4.5,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,CHOL,"Cholesterol, total",4.2,mmol/L,,5.5,,4.2,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,LDL,LDL-C,2.0,mmol/L,,3.0,,2.0,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,HDL,HDL-C,1.1,mmol/L,1.0,,,1.1,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,TRIG,Triglycerides,2.0,mmol/L,,2.0,,2.0,mmol/L
+P001-LAB-2025-07-07,P001,2025-07-07,Bluegum Diagnostics,HB,Hb,138,g/L,130,180,,138,g/L
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,HBA1C,HbA1c,57,mmol/mol,20,42,H,7.4,%
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,GLU_F,Glucose (fasting),8.1,mmol/L,3.0,5.4,H,8.1,mmol/L
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,CREAT,Creatinine,116,µmol/L,60,110,H,116,µmol/L
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,EGFR,Estimated GFR,58,mL/min/1.73m²,60,,L,58,mL/min/1.73m²
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2025-09-29,P001,2025-09-29,Bluegum Diagnostics,K,Potassium,4.5,mmol/L,3.5,5.2,,4.5,mmol/L
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,HBA1C,HbA1c,53,mmol/mol,20,42,H,7.0,%
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,GLU_F,Glucose (fasting),7.1,mmol/L,3.0,5.4,H,7.1,mmol/L
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,CREAT,Creatinine,120,µmol/L,60,110,H,120,µmol/L
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,EGFR,Estimated GFR,58,mL/min/1.73m²,60,,L,58,mL/min/1.73m²
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,UACR,Urine ACR,3.7,mg/mmol,,2.5,H,3.7,mg/mmol
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P001-LAB-2025-12-29,P001,2025-12-29,Bluegum Diagnostics,K,Potassium,4.5,mmol/L,3.5,5.2,,4.5,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,HBA1C,HbA1c,50,mmol/mol,20,42,H,6.7,%
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,GLU_F,Glucose (fasting),7.0,mmol/L,3.0,5.4,H,7.0,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,CREAT,Creatinine,122,µmol/L,60,110,H,122,µmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,EGFR,Estimated GFR,56,mL/min/1.73m²,60,,L,56,mL/min/1.73m²
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,NA,Sodium,137,mmol/L,135,145,,137,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,K,Potassium,4.6,mmol/L,3.5,5.2,,4.6,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,CHOL,"Cholesterol, total",4.2,mmol/L,,5.5,,4.2,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,LDL,LDL-C,1.9,mmol/L,,3.0,,1.9,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,HDL,HDL-C,1.1,mmol/L,1.0,,,1.1,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,TRIG,Triglycerides,1.8,mmol/L,,2.0,,1.8,mmol/L
+P001-LAB-2026-04-01,P001,2026-04-01,Bluegum Diagnostics,HB,Hb,135,g/L,130,180,,135,g/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,GLU_F,Fasting Glucose,5.3,mmol/L,3.0,5.4,,5.3,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,CREAT,Creatinine,69,µmol/L,45,90,,69,µmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,EGFR,eGFR,83,mL/min/1.73m²,60,,,83,mL/min/1.73m²
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,NA,Sodium,141,mmol/L,135,145,,141,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,K,Potassium,4.3,mmol/L,3.5,5.2,,4.3,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,CHOL,Total Cholesterol,6.7,mmol/L,,5.5,H,6.7,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,LDL,LDL Cholesterol,4.6,mmol/L,,3.0,H,4.6,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,HDL,HDL Cholesterol,1.4,mmol/L,1.0,,,1.4,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,TRIG,Triglycerides,2.1,mmol/L,,2.0,H,2.1,mmol/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,ALT,ALT,23,U/L,5,40,,23,U/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,AST,AST,22,U/L,5,35,,22,U/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,CK,Creatine Kinase,111,U/L,30,200,,111,U/L
+P002-LAB-2023-10-08,P002,2023-10-08,Kestrel Pathology,HB,Haemoglobin,129,g/L,115,165,,129,g/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,CHOL,Total Cholesterol,5.3,mmol/L,,5.5,,5.3,mmol/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,LDL,LDL Cholesterol,3.2,mmol/L,,3.0,H,3.2,mmol/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,HDL,HDL Cholesterol,1.4,mmol/L,1.0,,,1.4,mmol/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,TRIG,Triglycerides,1.9,mmol/L,,2.0,,1.9,mmol/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,ALT,ALT,25,U/L,5,40,,25,U/L
+P002-LAB-2024-01-07,P002,2024-01-07,Kestrel Pathology,AST,AST,22,U/L,5,35,,22,U/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,CHOL,Total Cholesterol,5.2,mmol/L,,5.5,,5.2,mmol/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,LDL,LDL Cholesterol,3.1,mmol/L,,3.0,H,3.1,mmol/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,HDL,HDL Cholesterol,1.4,mmol/L,1.0,,,1.4,mmol/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,TRIG,Triglycerides,1.7,mmol/L,,2.0,,1.7,mmol/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,ALT,ALT,26,U/L,5,40,,26,U/L
+P002-LAB-2024-04-10,P002,2024-04-10,Kestrel Pathology,AST,AST,23,U/L,5,35,,23,U/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,CREAT,Creatinine,68,µmol/L,45,90,,68,µmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,EGFR,eGFR,81,mL/min/1.73m²,60,,,81,mL/min/1.73m²
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,NA,Sodium,140,mmol/L,135,145,,140,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,K,Potassium,4.2,mmol/L,3.5,5.2,,4.2,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,CHOL,Total Cholesterol,5.1,mmol/L,,5.5,,5.1,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,LDL,LDL Cholesterol,3.0,mmol/L,,3.0,,3.0,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,HDL,HDL Cholesterol,1.4,mmol/L,1.0,,,1.4,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,TRIG,Triglycerides,1.6,mmol/L,,2.0,,1.6,mmol/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,ALT,ALT,27,U/L,5,40,,27,U/L
+P002-LAB-2024-08-09,P002,2024-08-09,Kestrel Pathology,AST,AST,24,U/L,5,35,,24,U/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,GLU_F,Fasting Glucose,5.4,mmol/L,3.0,5.4,,5.4,mmol/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,CHOL,Total Cholesterol,4.4,mmol/L,,5.5,,4.4,mmol/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,LDL,LDL Cholesterol,2.3,mmol/L,,3.0,,2.3,mmol/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,HDL,HDL Cholesterol,1.4,mmol/L,1.0,,,1.4,mmol/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,TRIG,Triglycerides,1.5,mmol/L,,2.0,,1.5,mmol/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,ALT,ALT,57,U/L,5,40,H,57,U/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,AST,AST,43,U/L,5,35,H,43,U/L
+P002-LAB-2024-11-05,P002,2024-11-05,Kestrel Pathology,CK,Creatine Kinase,193,U/L,30,200,,193,U/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,CHOL,Total Cholesterol,4.3,mmol/L,,5.5,,4.3,mmol/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,LDL,LDL Cholesterol,2.2,mmol/L,,3.0,,2.2,mmol/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,HDL,HDL Cholesterol,1.5,mmol/L,1.0,,,1.5,mmol/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,TRIG,Triglycerides,1.5,mmol/L,,2.0,,1.5,mmol/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,ALT,ALT,71,U/L,5,40,H,71,U/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,AST,AST,51,U/L,5,35,H,51,U/L
+P002-LAB-2025-02-04,P002,2025-02-04,Kestrel Pathology,CK,Creatine Kinase,241,U/L,30,200,H,241,U/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,CREAT,Creatinine,72,µmol/L,45,90,,72,µmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,EGFR,eGFR,82,mL/min/1.73m²,60,,,82,mL/min/1.73m²
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,NA,Sodium,142,mmol/L,135,145,,142,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,K,Potassium,4.1,mmol/L,3.5,5.2,,4.1,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,CHOL,Total Cholesterol,4.3,mmol/L,,5.5,,4.3,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,LDL,LDL Cholesterol,2.1,mmol/L,,3.0,,2.1,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,HDL,HDL Cholesterol,1.5,mmol/L,1.0,,,1.5,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,TRIG,Triglycerides,1.5,mmol/L,,2.0,,1.5,mmol/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,ALT,ALT,33,U/L,5,40,,33,U/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,AST,AST,27,U/L,5,35,,27,U/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,CK,Creatine Kinase,121,U/L,30,200,,121,U/L
+P002-LAB-2025-05-12,P002,2025-05-12,Kestrel Pathology,HB,Haemoglobin,135,g/L,115,165,,135,g/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,CHOL,Total Cholesterol,4.1,mmol/L,,5.5,,4.1,mmol/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,LDL,LDL Cholesterol,2.0,mmol/L,,3.0,,2.0,mmol/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,HDL,HDL Cholesterol,1.5,mmol/L,1.0,,,1.5,mmol/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,TRIG,Triglycerides,1.4,mmol/L,,2.0,,1.4,mmol/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,ALT,ALT,28,U/L,5,40,,28,U/L
+P002-LAB-2025-09-08,P002,2025-09-08,Kestrel Pathology,AST,AST,25,U/L,5,35,,25,U/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,GLU_F,Fasting Glucose,5.6,mmol/L,3.0,5.4,H,5.6,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,CREAT,Creatinine,69,µmol/L,45,90,,69,µmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,EGFR,eGFR,79,mL/min/1.73m²,60,,,79,mL/min/1.73m²
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,NA,Sodium,139,mmol/L,135,145,,139,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,K,Potassium,4.4,mmol/L,3.5,5.2,,4.4,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,CHOL,Total Cholesterol,4.2,mmol/L,,5.5,,4.2,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,LDL,LDL Cholesterol,2.1,mmol/L,,3.0,,2.1,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,HDL,HDL Cholesterol,1.5,mmol/L,1.0,,,1.5,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,TRIG,Triglycerides,1.4,mmol/L,,2.0,,1.4,mmol/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,ALT,ALT,28,U/L,5,40,,28,U/L
+P002-LAB-2026-01-08,P002,2026-01-08,Kestrel Pathology,AST,AST,24,U/L,5,35,,24,U/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,CHOL,Total Cholesterol,4.1,mmol/L,,5.5,,4.1,mmol/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,LDL,LDL Cholesterol,2.0,mmol/L,,3.0,,2.0,mmol/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,HDL,HDL Cholesterol,1.5,mmol/L,1.0,,,1.5,mmol/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,TRIG,Triglycerides,1.4,mmol/L,,2.0,,1.4,mmol/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,ALT,ALT,26,U/L,5,40,,26,U/L
+P002-LAB-2026-05-07,P002,2026-05-07,Kestrel Pathology,AST,AST,23,U/L,5,35,,23,U/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,CREAT,Creatinine,84,µmol/L,60,110,,84,µmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,EGFR,Estimated GFR,96,mL/min/1.73m²,60,,,96,mL/min/1.73m²
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,NA,Sodium,140,mmol/L,135,145,,140,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,K,Potassium,4.1,mmol/L,3.5,5.2,,4.1,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,CHOL,"Cholesterol, total",6.1,mmol/L,,5.5,H,6.1,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,LDL,LDL-C,4.0,mmol/L,,3.0,H,4.0,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,HDL,HDL-C,1.2,mmol/L,1.0,,,1.2,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,TRIG,Triglycerides,1.9,mmol/L,,2.0,,1.9,mmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,TSH,TSH,9.68,mIU/L,0.4,4.0,H,9.68,mIU/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),9.0,pmol/L,10.0,20.0,L,9.0,pmol/L
+P003-LAB-2024-02-12,P003,2024-02-12,Bluegum Diagnostics,HB,Hb,148,g/L,130,180,,148,g/L
+P003-LAB-2024-04-10,P003,2024-04-10,Bluegum Diagnostics,TSH,TSH,6.31,mIU/L,0.4,4.0,H,6.31,mIU/L
+P003-LAB-2024-04-10,P003,2024-04-10,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),11.2,pmol/L,10.0,20.0,,11.2,pmol/L
+P003-LAB-2024-06-14,P003,2024-06-14,Bluegum Diagnostics,TSH,TSH,4.64,mIU/L,0.4,4.0,H,4.64,mIU/L
+P003-LAB-2024-06-14,P003,2024-06-14,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),12.7,pmol/L,10.0,20.0,,12.7,pmol/L
+P003-LAB-2024-09-15,P003,2024-09-15,Bluegum Diagnostics,TSH,TSH,2.34,mIU/L,0.4,4.0,,2.34,mIU/L
+P003-LAB-2024-09-15,P003,2024-09-15,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),15.2,pmol/L,10.0,20.0,,15.2,pmol/L
+P003-LAB-2024-12-16,P003,2024-12-16,Bluegum Diagnostics,TSH,TSH,1.89,mIU/L,0.4,4.0,,1.89,mIU/L
+P003-LAB-2024-12-16,P003,2024-12-16,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),16.2,pmol/L,10.0,20.0,,16.2,pmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,CHOL,"Cholesterol, total",5.0,mmol/L,,5.5,,5.0,mmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,LDL,LDL-C,3.1,mmol/L,,3.0,H,3.1,mmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,HDL,HDL-C,1.3,mmol/L,1.0,,,1.3,mmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,TRIG,Triglycerides,1.5,mmol/L,,2.0,,1.5,mmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,TSH,TSH,2.10,mIU/L,0.4,4.0,,2.1,mIU/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),16.1,pmol/L,10.0,20.0,,16.1,pmol/L
+P003-LAB-2025-03-11,P003,2025-03-11,Bluegum Diagnostics,HB,Hb,149,g/L,130,180,,149,g/L
+P003-LAB-2025-06-13,P003,2025-06-13,Bluegum Diagnostics,TSH,TSH,7.72,mIU/L,0.4,4.0,H,7.72,mIU/L
+P003-LAB-2025-06-13,P003,2025-06-13,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),10.9,pmol/L,10.0,20.0,,10.9,pmol/L
+P003-LAB-2025-09-09,P003,2025-09-09,Bluegum Diagnostics,TSH,TSH,3.08,mIU/L,0.4,4.0,,3.08,mIU/L
+P003-LAB-2025-09-09,P003,2025-09-09,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),14.8,pmol/L,10.0,20.0,,14.8,pmol/L
+P003-LAB-2025-11-10,P003,2025-11-10,Bluegum Diagnostics,TSH,TSH,2.19,mIU/L,0.4,4.0,,2.19,mIU/L
+P003-LAB-2025-11-10,P003,2025-11-10,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),16.2,pmol/L,10.0,20.0,,16.2,pmol/L
+P003-LAB-2026-02-14,P003,2026-02-14,Bluegum Diagnostics,TSH,TSH,1.82,mIU/L,0.4,4.0,,1.82,mIU/L
+P003-LAB-2026-02-14,P003,2026-02-14,Bluegum Diagnostics,FT4,Free Thyroxine (FT4),17.0,pmol/L,10.0,20.0,,17.0,pmol/L

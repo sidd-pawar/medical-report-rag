@@ -1,0 +1,21 @@
+# pyproject.toml - describes this project to Python's packaging tools.
+# It lets you write "from medrag.config import ..." from any script or test,
+# without telling Python where the code lives each time.
+
+[build-system]
+# The tool used to install this project as a package
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medrag"                 # the name you import: "import medrag"
+version = "0.1.0"
+description = "LLM + RAG assistant for medical report history (synthetic data only)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]                 # our code lives in the src/ folder
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]            # lets the tests find our code too
+testpaths = ["tests"]           # where pytest looks for tests

@@ -1,0 +1,13 @@
+patient_id,drug,strength,instructions,start_doc_id,start_date,end_date
+P001,Metformin,500 mg,1 tablet twice daily with meals,P001-RX-2023-07-25,2023-07-25,2023-10-16
+P001,Metformin,1000 mg,1 tablet twice daily with meals,P001-RX-2023-10-16,2023-10-16,
+P001,Perindopril,5 mg,1 tablet once daily,P001-RX-2023-07-25,2023-07-25,
+P001,Atorvastatin,20 mg,1 tablet once daily at night,P001-RX-2024-07-15,2024-07-15,
+P001,Empagliflozin,10 mg,1 tablet once daily in the morning,P001-RX-2025-07-18,2025-07-18,
+P002,Amlodipine,5 mg,1 tablet once daily,P002-RX-2023-10-26,2023-10-26,
+P002,Atorvastatin,20 mg,1 tablet once daily at night,P002-RX-2023-10-26,2023-10-26,2024-08-26
+P002,Atorvastatin,40 mg,1 tablet once daily at night,P002-RX-2024-08-26,2024-08-26,2025-02-24
+P002,Rosuvastatin,10 mg,1 tablet once daily,P002-RX-2025-02-24,2025-02-24,
+P003,Levothyroxine,50 microgram,1 tablet once daily on an empty stomach,P003-RX-2024-02-20,2024-02-20,2024-04-24
+P003,Levothyroxine,75 microgram,1 tablet once daily on an empty stomach,P003-RX-2024-04-24,2024-04-24,2024-06-20
+P003,Levothyroxine,100 microgram,1 tablet once daily on an empty stomach,P003-RX-2024-06-20,2024-06-20,

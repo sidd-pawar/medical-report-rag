@@ -1,0 +1,16 @@
+patient_id,doc_id,collected_date,test_code,kind,description
+P001,P001-LAB-2024-04-06,2024-04-06,HBA1C,response_to_treatment,HbA1c fell from 8.9% to about 7.1% after metformin was started and increased.
+P001,P001-LAB-2024-07-01,2024-07-01,K,out_of_range,One-off high potassium (about 5.8 mmol/L); back in range at the next test.
+P001,P001-LAB-2025-01-02,2025-01-02,EGFR,sudden_change,Sudden eGFR drop to about 51 (below range) after gastroenteritis; partly recovered by month 21.
+P001,P001-LAB-2025-07-07,2025-07-07,HBA1C,trend_reversal,HbA1c rose again from about 7.0% to 8.4% between months 15 and 24.
+P001,P001-LAB-2025-12-29,2025-12-29,HBA1C,response_to_treatment,HbA1c back to about 7.0% after empagliflozin was added.
+P001,P001-LAB-2025-07-07,2025-07-07,LDL,response_to_treatment,LDL fell from about 3.3 to 2.0 mmol/L after atorvastatin was started.
+P002,P002-LAB-2024-01-07,2024-01-07,LDL,response_to_treatment,LDL fell from 4.6 to about 3.2 mmol/L after atorvastatin 20 mg was started.
+P002,P002-LAB-2024-11-05,2024-11-05,ALT,out_of_range,ALT rose above range (about 58 U/L) after the atorvastatin dose increase.
+P002,P002-LAB-2025-02-04,2025-02-04,ALT,out_of_range,ALT peaked at about 71 U/L; AST also above range.
+P002,P002-LAB-2025-02-04,2025-02-04,CK,out_of_range,Creatine kinase above range (about 240 U/L).
+P002,P002-LAB-2025-05-12,2025-05-12,ALT,response_to_treatment,ALT back in range (about 33 U/L) after switching to rosuvastatin; LDL stayed controlled.
+P003,P003-LAB-2024-02-12,2024-02-12,TSH,out_of_range,TSH high (about 9.8 mIU/L) and Free T4 low before treatment.
+P003,P003-LAB-2024-09-15,2024-09-15,TSH,response_to_treatment,TSH back in range (about 2.4) after dose increases to 100 microgram.
+P003,P003-LAB-2025-06-13,2025-06-13,TSH,sudden_change,"TSH jumped to about 7.6 after a year of stable results, after starting calcium."
+P003,P003-LAB-2025-09-09,2025-09-09,TSH,response_to_treatment,TSH back in range (about 3.0) after separating calcium and levothyroxine.

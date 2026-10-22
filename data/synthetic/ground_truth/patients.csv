@@ -1,0 +1,4 @@
+patient_id,name,sex,dob,conditions
+P001,Arun Mehta,M,1968-04-17,Type 2 diabetes; Chronic kidney disease (early stage)
+P002,Grace Liu,F,1962-09-03,Hypertension; High cholesterol
+P003,Daniel O'Connor,M,1981-02-11,Hypothyroidism
