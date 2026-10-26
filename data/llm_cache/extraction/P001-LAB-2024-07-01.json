@@ -1,0 +1,122 @@
+{
+  "doc_id": "P001-LAB-2024-07-01",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1381,
+    "output_tokens": 518
+  },
+  "report": {
+    "lab_name": "Kestrel Pathology",
+    "collected_date": "2024-07-01",
+    "results": [
+      {
+        "test_name": "HbA1c",
+        "test_code": "HBA1C",
+        "value": 6.8,
+        "unit": "%",
+        "ref_low": 4.0,
+        "ref_high": 6.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Fasting Glucose",
+        "test_code": "GLU_F",
+        "value": 7.1,
+        "unit": "mmol/L",
+        "ref_low": 3.0,
+        "ref_high": 5.4,
+        "flag": "H"
+      },
+      {
+        "test_name": "Creatinine",
+        "test_code": "CREAT",
+        "value": 99.0,
+        "unit": "µmol/L",
+        "ref_low": 60.0,
+        "ref_high": 110.0,
+        "flag": ""
+      },
+      {
+        "test_name": "eGFR",
+        "test_code": "EGFR",
+        "value": 69.0,
+        "unit": "mL/min/1.73m²",
+        "ref_low": 60.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Urine Albumin/Creatinine Ratio",
+        "test_code": "UACR",
+        "value": 4.2,
+        "unit": "mg/mmol",
+        "ref_low": null,
+        "ref_high": 2.5,
+        "flag": "H"
+      },
+      {
+        "test_name": "Sodium",
+        "test_code": "NA",
+        "value": 139.0,
+        "unit": "mmol/L",
+        "ref_low": 135.0,
+        "ref_high": 145.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Potassium",
+        "test_code": "K",
+        "value": 5.8,
+        "unit": "mmol/L",
+        "ref_low": 3.5,
+        "ref_high": 5.2,
+        "flag": "H"
+      },
+      {
+        "test_name": "Total Cholesterol",
+        "test_code": "CHOL",
+        "value": 5.6,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": "H"
+      },
+      {
+        "test_name": "LDL Cholesterol",
+        "test_code": "LDL",
+        "value": 3.4,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "HDL Cholesterol",
+        "test_code": "HDL",
+        "value": 1.0,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 2.5,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Haemoglobin",
+        "test_code": "HB",
+        "value": 139.0,
+        "unit": "g/L",
+        "ref_low": 130.0,
+        "ref_high": 180.0,
+        "flag": ""
+      }
+    ]
+  }
+}

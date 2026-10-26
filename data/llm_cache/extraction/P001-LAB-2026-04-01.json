@@ -1,0 +1,113 @@
+{
+  "doc_id": "P001-LAB-2026-04-01",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1344,
+    "output_tokens": 465
+  },
+  "report": {
+    "lab_name": "Bluegum Diagnostics",
+    "collected_date": "2026-04-01",
+    "results": [
+      {
+        "test_name": "HbA1c",
+        "test_code": "HBA1C",
+        "value": 50.0,
+        "unit": "mmol/mol",
+        "ref_low": 20.0,
+        "ref_high": 42.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Glucose (fasting)",
+        "test_code": "GLU_F",
+        "value": 7.0,
+        "unit": "mmol/L",
+        "ref_low": 3.0,
+        "ref_high": 5.4,
+        "flag": "H"
+      },
+      {
+        "test_name": "Creatinine",
+        "test_code": "CREAT",
+        "value": 122.0,
+        "unit": "µmol/L",
+        "ref_low": 60.0,
+        "ref_high": 110.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Estimated GFR",
+        "test_code": "EGFR",
+        "value": 56.0,
+        "unit": "mL/min/1.73m²",
+        "ref_low": 60.0,
+        "ref_high": null,
+        "flag": "L"
+      },
+      {
+        "test_name": "Sodium",
+        "test_code": "NA",
+        "value": 137.0,
+        "unit": "mmol/L",
+        "ref_low": 135.0,
+        "ref_high": 145.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Potassium",
+        "test_code": "K",
+        "value": 4.6,
+        "unit": "mmol/L",
+        "ref_low": 3.5,
+        "ref_high": 5.2,
+        "flag": ""
+      },
+      {
+        "test_name": "Cholesterol, total",
+        "test_code": "CHOL",
+        "value": 4.2,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": ""
+      },
+      {
+        "test_name": "LDL-C",
+        "test_code": "LDL",
+        "value": 1.9,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": ""
+      },
+      {
+        "test_name": "HDL-C",
+        "test_code": "HDL",
+        "value": 1.1,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 1.8,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Hb",
+        "test_code": "HB",
+        "value": 135.0,
+        "unit": "g/L",
+        "ref_low": 130.0,
+        "ref_high": 180.0,
+        "flag": ""
+      }
+    ]
+  }
+}

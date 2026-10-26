@@ -1,0 +1,68 @@
+{
+  "doc_id": "P001-LAB-2024-09-29",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1220,
+    "output_tokens": 266
+  },
+  "report": {
+    "lab_name": "Bluegum Diagnostics",
+    "collected_date": "2024-09-29",
+    "results": [
+      {
+        "test_name": "HbA1c",
+        "test_code": "HBA1C",
+        "value": 54.0,
+        "unit": "mmol/mol",
+        "ref_low": 20.0,
+        "ref_high": 42.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Glucose (fasting)",
+        "test_code": "GLU_F",
+        "value": 7.0,
+        "unit": "mmol/L",
+        "ref_low": 3.0,
+        "ref_high": 5.4,
+        "flag": "H"
+      },
+      {
+        "test_name": "Creatinine",
+        "test_code": "CREAT",
+        "value": 101.0,
+        "unit": "µmol/L",
+        "ref_low": 60.0,
+        "ref_high": 110.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Estimated GFR",
+        "test_code": "EGFR",
+        "value": 67.0,
+        "unit": "mL/min/1.73m²",
+        "ref_low": 60.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Sodium",
+        "test_code": "NA",
+        "value": 139.0,
+        "unit": "mmol/L",
+        "ref_low": 135.0,
+        "ref_high": 145.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Potassium",
+        "test_code": "K",
+        "value": 4.7,
+        "unit": "mmol/L",
+        "ref_low": 3.5,
+        "ref_high": 5.2,
+        "flag": ""
+      }
+    ]
+  }
+}

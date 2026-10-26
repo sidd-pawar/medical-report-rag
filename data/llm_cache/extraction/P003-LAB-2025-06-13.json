@@ -1,0 +1,32 @@
+{
+  "doc_id": "P003-LAB-2025-06-13",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1131,
+    "output_tokens": 108
+  },
+  "report": {
+    "lab_name": "Bluegum Diagnostics",
+    "collected_date": "2025-06-13",
+    "results": [
+      {
+        "test_name": "TSH",
+        "test_code": "TSH",
+        "value": 7.72,
+        "unit": "mIU/L",
+        "ref_low": 0.4,
+        "ref_high": 4.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Free Thyroxine (FT4)",
+        "test_code": "FT4",
+        "value": 10.9,
+        "unit": "pmol/L",
+        "ref_low": 10.0,
+        "ref_high": 20.0,
+        "flag": ""
+      }
+    ]
+  }
+}

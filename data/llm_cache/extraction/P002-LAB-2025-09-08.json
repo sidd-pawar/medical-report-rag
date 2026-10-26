@@ -1,0 +1,68 @@
+{
+  "doc_id": "P002-LAB-2025-09-08",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1194,
+    "output_tokens": 258
+  },
+  "report": {
+    "lab_name": "Kestrel Pathology",
+    "collected_date": "2025-09-08",
+    "results": [
+      {
+        "test_name": "Total Cholesterol",
+        "test_code": "CHOL",
+        "value": 4.1,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": ""
+      },
+      {
+        "test_name": "LDL Cholesterol",
+        "test_code": "LDL",
+        "value": 2.0,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": ""
+      },
+      {
+        "test_name": "HDL Cholesterol",
+        "test_code": "HDL",
+        "value": 1.5,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 1.4,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": ""
+      },
+      {
+        "test_name": "ALT",
+        "test_code": "ALT",
+        "value": 28.0,
+        "unit": "U/L",
+        "ref_low": 5.0,
+        "ref_high": 40.0,
+        "flag": ""
+      },
+      {
+        "test_name": "AST",
+        "test_code": "AST",
+        "value": 25.0,
+        "unit": "U/L",
+        "ref_low": 5.0,
+        "ref_high": 35.0,
+        "flag": ""
+      }
+    ]
+  }
+}

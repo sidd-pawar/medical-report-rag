@@ -1,0 +1,77 @@
+{
+  "doc_id": "P002-LAB-2025-02-04",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1230,
+    "output_tokens": 294
+  },
+  "report": {
+    "lab_name": "Kestrel Pathology",
+    "collected_date": "2025-02-04",
+    "results": [
+      {
+        "test_name": "Total Cholesterol",
+        "test_code": "CHOL",
+        "value": 4.3,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": ""
+      },
+      {
+        "test_name": "LDL Cholesterol",
+        "test_code": "LDL",
+        "value": 2.2,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": ""
+      },
+      {
+        "test_name": "HDL Cholesterol",
+        "test_code": "HDL",
+        "value": 1.5,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 1.5,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": ""
+      },
+      {
+        "test_name": "ALT",
+        "test_code": "ALT",
+        "value": 71.0,
+        "unit": "U/L",
+        "ref_low": 5.0,
+        "ref_high": 40.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "AST",
+        "test_code": "AST",
+        "value": 51.0,
+        "unit": "U/L",
+        "ref_low": 5.0,
+        "ref_high": 35.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Creatine Kinase",
+        "test_code": "CK",
+        "value": 241.0,
+        "unit": "U/L",
+        "ref_low": 30.0,
+        "ref_high": 200.0,
+        "flag": "H"
+      }
+    ]
+  }
+}

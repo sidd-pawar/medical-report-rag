@@ -1,0 +1,77 @@
+{
+  "doc_id": "P003-LAB-2025-03-11",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1225,
+    "output_tokens": 313
+  },
+  "report": {
+    "lab_name": "Bluegum Diagnostics",
+    "collected_date": "2025-03-11",
+    "results": [
+      {
+        "test_name": "Cholesterol, total",
+        "test_code": "CHOL",
+        "value": 5.0,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": ""
+      },
+      {
+        "test_name": "LDL-C",
+        "test_code": "LDL",
+        "value": 3.1,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "HDL-C",
+        "test_code": "HDL",
+        "value": 1.3,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 1.5,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": ""
+      },
+      {
+        "test_name": "TSH",
+        "test_code": "TSH",
+        "value": 2.1,
+        "unit": "mIU/L",
+        "ref_low": 0.4,
+        "ref_high": 4.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Free Thyroxine (FT4)",
+        "test_code": "FT4",
+        "value": 16.1,
+        "unit": "pmol/L",
+        "ref_low": 10.0,
+        "ref_high": 20.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Hb",
+        "test_code": "HB",
+        "value": 149.0,
+        "unit": "g/L",
+        "ref_low": 130.0,
+        "ref_high": 180.0,
+        "flag": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "doc_id": "P003-LAB-2024-02-12",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1356,
+    "output_tokens": 462
+  },
+  "report": {
+    "lab_name": "Bluegum Diagnostics",
+    "collected_date": "2024-02-12",
+    "results": [
+      {
+        "test_name": "Creatinine",
+        "test_code": "CREAT",
+        "value": 84.0,
+        "unit": "µmol/L",
+        "ref_low": 60.0,
+        "ref_high": 110.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Estimated GFR",
+        "test_code": "EGFR",
+        "value": 96.0,
+        "unit": "mL/min/1.73m²",
+        "ref_low": 60.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Sodium",
+        "test_code": "NA",
+        "value": 140.0,
+        "unit": "mmol/L",
+        "ref_low": 135.0,
+        "ref_high": 145.0,
+        "flag": ""
+      },
+      {
+        "test_name": "Potassium",
+        "test_code": "K",
+        "value": 4.1,
+        "unit": "mmol/L",
+        "ref_low": 3.5,
+        "ref_high": 5.2,
+        "flag": ""
+      },
+      {
+        "test_name": "Cholesterol, total",
+        "test_code": "CHOL",
+        "value": 6.1,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 5.5,
+        "flag": "H"
+      },
+      {
+        "test_name": "LDL-C",
+        "test_code": "LDL",
+        "value": 4.0,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 3.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "HDL-C",
+        "test_code": "HDL",
+        "value": 1.2,
+        "unit": "mmol/L",
+        "ref_low": 1.0,
+        "ref_high": null,
+        "flag": ""
+      },
+      {
+        "test_name": "Triglycerides",
+        "test_code": "TRIG",
+        "value": 1.9,
+        "unit": "mmol/L",
+        "ref_low": null,
+        "ref_high": 2.0,
+        "flag": ""
+      },
+      {
+        "test_name": "TSH",
+        "test_code": "TSH",
+        "value": 9.68,
+        "unit": "mIU/L",
+        "ref_low": 0.4,
+        "ref_high": 4.0,
+        "flag": "H"
+      },
+      {
+        "test_name": "Free Thyroxine (FT4)",
+        "test_code": "FT4",
+        "value": 9.0,
+        "unit": "pmol/L",
+        "ref_low": 10.0,
+        "ref_high": 20.0,
+        "flag": "L"
+      },
+      {
+        "test_name": "Hb",
+        "test_code": "HB",
+        "value": 148.0,
+        "unit": "g/L",
+        "ref_low": 130.0,
+        "ref_high": 180.0,
+        "flag": ""
+      }
+    ]
+  }
+}
