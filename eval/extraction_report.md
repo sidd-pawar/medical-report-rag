@@ -9,7 +9,8 @@ Every value extracted by the LLM compared with the synthetic data's answer key.
 | Value | 100.0% (217/217) | 100.0% | 100.0% |
 | Unit | 100.0% (217/217) | 100.0% | 100.0% |
 | Reference range | 100.0% (217/217) | 100.0% | 100.0% |
-| High/low flag | 99.5% (216/217) | 100.0% | 99.2% |
+| High/low flag (read by LLM) | 99.5% (216/217) | 100.0% | 99.2% |
+| High/low flag (calculated in code) | 100.0% (217/217) | 100.0% | 100.0% |
 | Mapped to standard test code | 100.0% (217/217) | 100.0% | 100.0% |
 | Converted to standard unit | 100.0% (217/217) | 100.0% | 100.0% |
 

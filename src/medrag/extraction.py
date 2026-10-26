@@ -222,10 +222,39 @@ def to_standard(test_code: str, value: float, unit: str) -> tuple[float | None, 
     return None, None
 
 
+def range_flag(value: float, ref_low: float | None, ref_high: float | None) -> str:
+    """
+    Work out the high/low flag ourselves, from the value and the reference range.
+
+    Why not trust the LLM's flag? In testing, gpt-4o-mini marked a fasting glucose of
+    5.4 (range 3.0 - 5.4) as "L". The value sits exactly on the limit, and on that lab's
+    layout an empty flag cell vanishes from the extracted text, so the model guessed.
+    Deciding high/low is a calculation, so it belongs in code.
+
+    Args:
+        value:    The result.
+        ref_low:  Bottom of the range, or None if there's no lower limit.
+        ref_high: Top of the range, or None if there's no upper limit.
+
+    Returns:
+        "H" if above the range, "L" if below it, "" if within it.
+        A value exactly ON a limit counts as within the range.
+    """
+    if ref_high is not None and value > ref_high:
+        return "H"
+    if ref_low is not None and value < ref_low:
+        return "L"
+    return ""
+
+
 def to_rows(doc: ParsedDocument, report: ExtractedReport) -> list[dict]:
     """
     Turn one ExtractedReport into flat table rows (one per result), adding the
-    document details and the standardised value.
+    document details, the standardised value, and a flag calculated in code.
+
+    Two flag columns are kept on purpose:
+        flag           what the LLM read from the page (used to measure the LLM)
+        flag_computed  calculated by range_flag() (what the app shows users)
     """
     rows = []
     for r in report.results:
@@ -235,6 +264,7 @@ def to_rows(doc: ParsedDocument, report: ExtractedReport) -> list[dict]:
             "collected_date": report.collected_date, "lab": report.lab_name,
             "test_code": r.test_code, "test_name": r.test_name,
             "value": r.value, "unit": r.unit, "ref_low": r.ref_low, "ref_high": r.ref_high,
-            "flag": r.flag, "value_standard": value_std, "unit_standard": unit_std,
+            "flag": r.flag, "flag_computed": range_flag(r.value, r.ref_low, r.ref_high),
+            "value_standard": value_std, "unit_standard": unit_std,
         })
     return rows

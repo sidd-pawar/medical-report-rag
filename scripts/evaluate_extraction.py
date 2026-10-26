@@ -38,7 +38,7 @@ report = evaluate_extraction(truth, extracted)
 
 # Print a short summary
 print(f"Extraction accuracy ({model}, {len(truth)} results in the answer key)\n")
-for metric in ["found", "date", "value", "unit", "range", "flag", "code", "standard_value"]:
+for metric in ["found", "date", "value", "unit", "range", "flag", "flag_computed", "code", "standard_value"]:
     s = report.scores[metric]
     print(f"  {metric:<16}{s.pct:6.1f}%   ({s.correct}/{s.total})")
 print(f"\n  Results not on the report: {report.not_on_report}")

@@ -15,6 +15,7 @@ Metrics (each is "correct / total"):
     found           answer-key results the LLM extracted at all (recall)
     not_on_report   extracted results that aren't on the report (made-up rows)
     value, unit, range, flag    exact field matches, for results that were found
+    flag_computed   the flag our code calculates from value and range (what users see)
     code            mapped to the right standard code, e.g. "Estimated GFR" -> EGFR
     standard_value  converted to the right standard value (e.g. 54 mmol/mol -> 7.1 %)
     date            collected date correct, per document
@@ -73,7 +74,7 @@ class ExtractionReport:
     errors: list[dict] = field(default_factory=list)
 
 
-FIELDS = ["value", "unit", "range", "flag", "code", "standard_value"]
+FIELDS = ["value", "unit", "range", "flag", "flag_computed", "code", "standard_value"]
 
 
 def evaluate_extraction(truth_rows: list[dict], extracted_rows: list[dict]) -> ExtractionReport:
@@ -134,15 +135,17 @@ def evaluate_extraction(truth_rows: list[dict], extracted_rows: list[dict]) -> E
                 "range": _close(_num(e["ref_low"]), _num(t["ref_low"]))
                          and _close(_num(e["ref_high"]), _num(t["ref_high"])),
                 "flag": e["flag"] == t["flag"],
+                "flag_computed": e["flag_computed"] == t["flag"],
                 "code": e["test_code"] == t["test_code"],
                 # 0.1 tolerance: converting a rounded mmol/mol back to % can differ in the last digit
                 "standard_value": _close(_num(e["value_standard"]), _num(t["value_standard"]), 0.1),
             }
             expected = {"value": t["value_printed"], "unit": t["unit_printed"],
                         "range": f'{t["ref_low"]}..{t["ref_high"]}', "flag": t["flag"] or "(none)",
-                        "code": t["test_code"], "standard_value": t["value_standard"]}
+                        "flag_computed": t["flag"] or "(none)", "code": t["test_code"], "standard_value": t["value_standard"]}
             got = {"value": e["value"], "unit": e["unit"], "range": f'{e["ref_low"]}..{e["ref_high"]}',
-                   "flag": e["flag"] or "(none)", "code": e["test_code"], "standard_value": e["value_standard"]}
+                   "flag": e["flag"] or "(none)", "flag_computed": e["flag_computed"] or "(none)",
+                   "code": e["test_code"], "standard_value": e["value_standard"]}
 
             for name, ok in checks.items():
                 report.scores[name].add(ok)
@@ -165,7 +168,8 @@ def to_markdown(report: ExtractionReport, model: str) -> str:
     """Write the evaluation as a Markdown page (for eval/extraction_report.md and the README)."""
     order = ["found", "date"] + FIELDS
     labels = {"found": "Results found", "date": "Collected date", "value": "Value",
-              "unit": "Unit", "range": "Reference range", "flag": "High/low flag",
+              "unit": "Unit", "range": "Reference range", "flag": "High/low flag (read by LLM)",
+              "flag_computed": "High/low flag (calculated in code)",
               "code": "Mapped to standard test code", "standard_value": "Converted to standard unit"}
     labs = sorted(report.by_lab)
 
