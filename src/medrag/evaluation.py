@@ -284,3 +284,136 @@ def prescriptions_to_markdown(report: ExtractionReport, model: str) -> str:
     else:
         lines.append("None. Every checked field matched the answer key.")
     return "\n".join(lines) + "\n"
+
+# =============================================================================
+# CHANGE DETECTION (trends)
+# =============================================================================
+# This scoring is shared by BOTH approaches in the experiment: the rules in trends.py
+# (step 5b) and the LLM-only detector (step 5c). Same events, same measures, so the
+# comparison is fair.
+
+# Tests that normally move together. If an event is about eGFR, an alert on creatinine in
+# the same report is about the same story, not a false alarm.
+RELATED_TESTS = [{"HBA1C", "GLU_F"}, {"EGFR", "CREAT", "UACR"}, {"TSH", "FT4"},
+                 {"ALT", "AST", "CK"}, {"LDL", "CHOL", "HDL", "TRIG"}, {"K", "NA"}]
+
+
+def _related(a: str, b: str) -> bool:
+    """True if two test codes are the same or belong to the same group above."""
+    return a == b or any(a in group and b in group for group in RELATED_TESTS)
+
+
+@dataclass
+class ChangeReport:
+    """
+    How well a change detector found the built-in events, and how many alerts it raised.
+
+    Fields:
+        caught_exact:   Events with an alert on the same report and test.
+        caught_near:    Events with an alert on the same test within one report either side.
+        alerts:         Every (report, test) the detector raised at least one finding on.
+        alerts_related: Alerts on the same report as an event, on a related test.
+        missed:         Events with no alert even within one report.
+        other_alerts:   Alerts not linked to any event (each needs a human look:
+                        some are real changes the story didn't list, some are noise).
+        reports:        Number of lab reports, to express alerts per report.
+    """
+    caught_exact: Score
+    caught_near: Score
+    alerts: int
+    alerts_related: int
+    missed: list[dict]
+    other_alerts: list[tuple[str, str, list[str]]]
+    reports: int
+
+
+def evaluate_changes(events: list[dict], findings: list, histories: dict) -> ChangeReport:
+    """
+    Score detected changes against ground_truth/events.csv.
+
+    Args:
+        events:    Rows of events.csv (patient_id, doc_id, collected_date, test_code,
+                   kind, description).
+        findings:  Finding objects from any detector (rules or LLM), with patient_id,
+                   test_code, doc_id and rule.
+        histories: {(patient_id, test_code): [Point, ...]} from trends.build_histories(),
+                   used to find the reports either side of an event.
+
+    Returns:
+        A ChangeReport.
+
+    Why "near" as well as "exact"? An event marks when the story SAYS something happened;
+    a detector can fairly notice a gradual change one test earlier or later. Both scores
+    are reported, so nothing is hidden.
+
+    Why no "precision"? The story only lists the headline changes. A high result that
+    the story didn't script isn't a false alarm, so we count alerts and list the
+    unlinked ones for a human to review, instead of calling them wrong.
+    """
+    exact, near = Score(), Score()
+    missed = []
+
+    # Group findings by (report, test): several rules firing on the same result = one alert
+    alerts: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for f in findings:
+        alerts[(f.doc_id, f.test_code)].append(f.rule)
+
+    for e in events:
+        # The reports for this patient and test, oldest first, so we can find the
+        # report just before and just after the event's report
+        key = (e["patient_id"], e["test_code"])
+        docs = [p.doc_id for p in histories.get(key, [])]
+        i = docs.index(e["doc_id"]) if e["doc_id"] in docs else None
+        window = {docs[j] for j in (i - 1, i, i + 1) if i is not None and 0 <= j < len(docs)}
+
+        hit_exact = (e["doc_id"], e["test_code"]) in alerts
+        hit_near = any((d, e["test_code"]) in alerts for d in window)
+        exact.add(hit_exact)
+        near.add(hit_near)
+        if not hit_near:
+            missed.append(e)
+
+    # Sort every alert into "related to a built-in event" or "other"
+    related, other = 0, []
+    for (doc_id, code), rules in alerts.items():
+        if any(e["doc_id"] == doc_id and _related(e["test_code"], code) for e in events):
+            related += 1
+        else:
+            other.append((doc_id, code, sorted(set(rules))))
+
+    n_reports = len({p.doc_id for points in histories.values() for p in points})
+    return ChangeReport(exact, near, len(alerts), related, missed, sorted(other), n_reports)
+
+
+def changes_to_markdown(report: ChangeReport, title: str, rule_counts: dict[str, int]) -> str:
+    """
+    Write a change-detection evaluation as a Markdown page.
+
+    Args:
+        report:      The ChangeReport from evaluate_changes().
+        title:       Page heading, e.g. "Change detection: rules in code".
+        rule_counts: How many findings each rule produced, e.g. {"sudden_change": 31}.
+
+    Returns:
+        The Markdown text.
+    """
+    r = report
+    lines = [f"# {title}", "",
+             f"Scored against the {r.caught_exact.total} changes built into the synthetic patients' stories "
+             "(`data/synthetic/ground_truth/events.csv`).", "",
+             "| Measure | Result |", "|---|---|",
+             f"| Built-in changes caught (same report) | {r.caught_exact.pct:.0f}% ({r.caught_exact.correct}/{r.caught_exact.total}) |",
+             f"| Built-in changes caught (within one report) | {r.caught_near.pct:.0f}% ({r.caught_near.correct}/{r.caught_near.total}) |",
+             f"| Alerts raised (report + test pairs) | {r.alerts} across {r.reports} reports ({r.alerts / r.reports:.1f} per report) |",
+             f"| Alerts on the same report as a built-in change, on a related test | {r.alerts_related} |",
+             f"| Other alerts (need a human look) | {len(r.other_alerts)} |", "",
+             "Findings by type: " + ", ".join(f"{k} {v}" for k, v in sorted(rule_counts.items())), ""]
+    lines += ["## Missed", ""]
+    lines += [f"- {e['patient_id']} {e['collected_date']} {e['test_code']}: {e['description']}"
+              for e in r.missed] or ["None."]
+    lines += ["", "## Other alerts", "",
+              "Not linked to a built-in change. The story only lists the headline changes, so many of",
+              "these are real (for example a high result on the first test), and some are noise.", "",
+              "| Report | Test | Found by |", "|---|---|---|"]
+    lines += [f"| {d} | {c} | {', '.join(rules)} |" for d, c, rules in r.other_alerts]
+    return "\n".join(lines) + "\n"
