@@ -1,0 +1,20 @@
+{
+  "doc_id": "P003-RX-2024-02-20",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 513,
+    "output_tokens": 65
+  },
+  "report": {
+    "issued_date": "2024-02-20",
+    "prescriber": "Dr Aisha Karim",
+    "medicines": [
+      {
+        "name": "Levothyroxine",
+        "strength": "50 microgram",
+        "directions": "1 tablet once daily on an empty stomach"
+      }
+    ],
+    "notes": "Started levothyroxine for an underactive thyroid."
+  }
+}

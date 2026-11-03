@@ -1,0 +1,25 @@
+{
+  "doc_id": "P001-RX-2023-07-25",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 529,
+    "output_tokens": 89
+  },
+  "report": {
+    "issued_date": "2023-07-25",
+    "prescriber": "Dr Priya Raman",
+    "medicines": [
+      {
+        "name": "Metformin",
+        "strength": "500 mg",
+        "directions": "1 tablet twice daily with meals"
+      },
+      {
+        "name": "Perindopril",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      }
+    ],
+    "notes": "Started metformin for type 2 diabetes.\nStarted perindopril to protect the kidneys."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "doc_id": "P002-RX-2023-10-26",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 527,
+    "output_tokens": 89
+  },
+  "report": {
+    "issued_date": "2023-10-26",
+    "prescriber": "Dr Tom Hollis",
+    "medicines": [
+      {
+        "name": "Amlodipine",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "strength": "20 mg",
+        "directions": "1 tablet once daily at night"
+      }
+    ],
+    "notes": "Started amlodipine for blood pressure.\nStarted atorvastatin for cholesterol."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "doc_id": "P002-RX-2024-08-26",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 530,
+    "output_tokens": 91
+  },
+  "report": {
+    "issued_date": "2024-08-26",
+    "prescriber": "Dr Tom Hollis",
+    "medicines": [
+      {
+        "name": "Amlodipine",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "strength": "40 mg",
+        "directions": "1 tablet once daily at night"
+      }
+    ],
+    "notes": "Atorvastatin increased from 20 mg to 40 mg as LDL is above target."
+  }
+}

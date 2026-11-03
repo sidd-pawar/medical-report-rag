@@ -192,3 +192,95 @@ def to_markdown(report: ExtractionReport, model: str) -> str:
     else:
         lines.append("None. Every checked field matched the answer key.")
     return "\n".join(lines) + "\n"
+
+
+
+
+# =============================================================================
+# PRESCRIPTIONS
+# =============================================================================
+
+def evaluate_prescriptions(medication_truth: list[dict], prescriptions: list[tuple],
+                           courses: list) -> ExtractionReport:
+    """
+    Score prescription extraction and the medication timeline against the answer key.
+
+    Args:
+        medication_truth: Rows of ground_truth/medications.csv (one per medicine course).
+        prescriptions:    (patient_id, doc_id, doc_date, ExtractedPrescription) per prescription.
+        courses:          The MedicationCourses built by prescriptions.build_timeline().
+
+    Checks:
+        date        issue date read correctly (per prescription)
+        found       each medicine the patient was taking appears on the extracted list
+        strength, directions   copied exactly, for medicines that were found
+        course      each medication course in the answer key was rebuilt exactly
+                    (same medicine, strength, start date and end date)
+    Extracted medicines that aren't on the prescription count as not_on_report.
+    """
+    report = ExtractionReport()
+
+    for patient_id, doc_id, doc_date, rx in prescriptions:
+        # The medicines this patient was taking on this date, according to the answer key:
+        # started on or before the date, and not yet ended
+        active = [m for m in medication_truth if m["patient_id"] == patient_id
+                  and m["start_date"] <= doc_date and (m["end_date"] == "" or m["end_date"] > doc_date)]
+
+        date_ok = rx.issued_date == doc_date
+        report.scores["date"].add(date_ok)
+        if not date_ok:
+            report.errors.append({"doc_id": doc_id, "test": "(date)", "field": "date",
+                                  "expected": doc_date, "got": rx.issued_date})
+
+        extracted = {_norm(m.name): m for m in rx.medicines}
+        for m in active:
+            e = extracted.pop(_norm(m["drug"]), None)   # pop: remove it, so leftovers are extras
+            report.scores["found"].add(e is not None)
+            if e is None:
+                report.errors.append({"doc_id": doc_id, "test": m["drug"], "field": "found",
+                                      "expected": "present", "got": "missing"})
+                continue
+            for name, expected, got in [("strength", m["strength"], e.strength),
+                                        ("directions", m["instructions"], e.directions)]:
+                report.scores[name].add(expected == got)
+                if expected != got:
+                    report.errors.append({"doc_id": doc_id, "test": m["drug"], "field": name,
+                                          "expected": expected, "got": got})
+
+        for e in extracted.values():   # anything left over wasn't on the prescription
+            report.not_on_report += 1
+            report.errors.append({"doc_id": doc_id, "test": e.name, "field": "not_on_report",
+                                  "expected": "(not on prescription)", "got": e.strength})
+
+    # Medication timeline: every course in the answer key rebuilt exactly?
+    built = {(c.patient_id, _norm(c.drug), c.strength, c.start_date, c.end_date or "") for c in courses}
+    for m in medication_truth:
+        key = (m["patient_id"], _norm(m["drug"]), m["strength"], m["start_date"], m["end_date"])
+        report.scores["course"].add(key in built)
+        if key not in built:
+            report.errors.append({"doc_id": m["start_doc_id"], "test": f'{m["drug"]} {m["strength"]}',
+                                  "field": "course", "expected": f'{m["start_date"]} to {m["end_date"] or "now"}',
+                                  "got": "not rebuilt"})
+    return report
+
+
+def prescriptions_to_markdown(report: ExtractionReport, model: str) -> str:
+    """Write the prescription evaluation as a Markdown page (for eval/prescription_report.md)."""
+    labels = {"date": "Issue date", "found": "Medicines found", "strength": "Strength",
+              "directions": "Directions", "course": "Medication courses rebuilt (start and end dates)"}
+    lines = [f"# Prescription evaluation ({model})", "",
+             "Medicines read from each prescription by the LLM, and the medication timeline built from",
+             "them in code, compared with the synthetic data's answer key.", "",
+             "| Check | Accuracy |", "|---|---|"]
+    for metric, label in labels.items():
+        s = report.scores[metric]
+        lines.append(f"| {label} | {s.pct:.1f}% ({s.correct}/{s.total}) |")
+    lines += ["", f"Medicines extracted that are not on the prescription: **{report.not_on_report}**", "",
+              "## Mistakes", ""]
+    if report.errors:
+        lines += ["| Document | Medicine | Check | Expected | Got |", "|---|---|---|---|---|"]
+        lines += [f"| {e['doc_id']} | {e['test']} | {e['field']} | {e['expected']} | {e['got']} |"
+                  for e in report.errors]
+    else:
+        lines.append("None. Every checked field matched the answer key.")
+    return "\n".join(lines) + "\n"

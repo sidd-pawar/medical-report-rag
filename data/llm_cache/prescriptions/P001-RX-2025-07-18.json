@@ -1,0 +1,35 @@
+{
+  "doc_id": "P001-RX-2025-07-18",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 558,
+    "output_tokens": 131
+  },
+  "report": {
+    "issued_date": "2025-07-18",
+    "prescriber": "Dr Priya Raman",
+    "medicines": [
+      {
+        "name": "Metformin",
+        "strength": "1000 mg",
+        "directions": "1 tablet twice daily with meals"
+      },
+      {
+        "name": "Perindopril",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "strength": "20 mg",
+        "directions": "1 tablet once daily at night"
+      },
+      {
+        "name": "Empagliflozin",
+        "strength": "10 mg",
+        "directions": "1 tablet once daily in the morning"
+      }
+    ],
+    "notes": "Added empagliflozin as HbA1c has risen again."
+  }
+}

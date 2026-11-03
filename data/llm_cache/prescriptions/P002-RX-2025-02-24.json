@@ -1,0 +1,25 @@
+{
+  "doc_id": "P002-RX-2025-02-24",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 533,
+    "output_tokens": 94
+  },
+  "report": {
+    "issued_date": "2025-02-24",
+    "prescriber": "Dr Tom Hollis",
+    "medicines": [
+      {
+        "name": "Amlodipine",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      },
+      {
+        "name": "Rosuvastatin",
+        "strength": "10 mg",
+        "directions": "1 tablet once daily"
+      }
+    ],
+    "notes": "Atorvastatin stopped. Switched to rosuvastatin 10 mg after raised liver enzymes and muscle aches."
+  }
+}

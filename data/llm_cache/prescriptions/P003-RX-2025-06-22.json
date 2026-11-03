@@ -1,0 +1,20 @@
+{
+  "doc_id": "P003-RX-2025-06-22",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 533,
+    "output_tokens": 84
+  },
+  "report": {
+    "issued_date": "2025-06-22",
+    "prescriber": "Dr Aisha Karim",
+    "medicines": [
+      {
+        "name": "Levothyroxine",
+        "strength": "100 microgram",
+        "directions": "1 tablet once daily on an empty stomach"
+      }
+    ],
+    "notes": "No dose change. Take on an empty stomach and at least 4 hours apart from calcium or iron supplements. Repeat blood test in 3 months."
+  }
+}

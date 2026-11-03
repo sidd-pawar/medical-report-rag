@@ -1,0 +1,25 @@
+{
+  "doc_id": "P001-RX-2023-10-16",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 526,
+    "output_tokens": 85
+  },
+  "report": {
+    "issued_date": "2023-10-16",
+    "prescriber": "Dr Priya Raman",
+    "medicines": [
+      {
+        "name": "Metformin",
+        "strength": "1000 mg",
+        "directions": "1 tablet twice daily with meals"
+      },
+      {
+        "name": "Perindopril",
+        "strength": "5 mg",
+        "directions": "1 tablet once daily"
+      }
+    ],
+    "notes": "Metformin increased from 500 mg to 1000 mg twice daily."
+  }
+}

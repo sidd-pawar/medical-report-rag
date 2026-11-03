@@ -1,0 +1,20 @@
+{
+  "doc_id": "P003-RX-2024-06-20",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 516,
+    "output_tokens": 68
+  },
+  "report": {
+    "issued_date": "2024-06-20",
+    "prescriber": "Dr Aisha Karim",
+    "medicines": [
+      {
+        "name": "Levothyroxine",
+        "strength": "100 microgram",
+        "directions": "1 tablet once daily on an empty stomach"
+      }
+    ],
+    "notes": "Levothyroxine increased from 75 to 100 microgram."
+  }
+}
