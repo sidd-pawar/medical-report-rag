@@ -15,6 +15,7 @@ How it works:
                   the schema, and the SDK turns it straight into Python objects.
     4. CACHE      Every answer is saved to a JSON file. A report is only ever sent to
                   OpenAI once; re-runs read the file (free, fast, identical results).
+                  Steps 3 and 4 use the shared helpers in llm.py.
     5. STANDARD   Python, not the LLM, converts units (e.g. HbA1c mmol/mol -> %),
                   because LLMs are unreliable at arithmetic.
 
@@ -22,13 +23,13 @@ Design choice worth knowing: the LLM only READS and MAPS. Every calculation happ
 in plain, tested Python code.
 """
 
-import json
 from pathlib import Path
 from typing import Callable, Literal
 
 from pydantic import BaseModel, Field
 
-from .config import CHAT_MODEL, get_api_key
+from .config import CHAT_MODEL
+from .llm import cached_parse, make_openai_parser
 from .parsing import ParsedDocument
 from .synthetic.catalog import TESTS
 
@@ -101,7 +102,7 @@ Standard test codes:
 
 
 # =============================================================================
-# 3. LLM CALL
+# 3. LLM CALL AND CACHE (the shared code lives in llm.py)
 # =============================================================================
 
 # Type of an "extractor": any function that takes report text and returns
@@ -110,41 +111,9 @@ Extractor = Callable[[str], tuple[ExtractedReport, dict]]
 
 
 def openai_extractor(model: str = CHAT_MODEL) -> Extractor:
-    """
-    Create an extractor that calls OpenAI.
+    """Create an extractor that sends lab report text to OpenAI (see llm.make_openai_parser)."""
+    return make_openai_parser(ExtractedReport, INSTRUCTIONS, model)
 
-    Args:
-        model: Which OpenAI model to use (default from .env, e.g. "gpt-4o-mini").
-
-    Returns:
-        A function: report text -> (ExtractedReport, {"input_tokens": .., "output_tokens": ..})
-    """
-    from openai import OpenAI   # imported here so tests don't need the OpenAI package set up
-
-    client = OpenAI(api_key=get_api_key())
-
-    def extract(text: str) -> tuple[ExtractedReport, dict]:
-        # responses.parse sends our schema to OpenAI and turns the JSON reply
-        # back into an ExtractedReport object for us.
-        response = client.responses.parse(
-            model=model,
-            instructions=INSTRUCTIONS,     # the "system" instructions
-            input=text,                    # the report text
-            text_format=ExtractedReport,   # the schema the reply must follow
-            temperature=0,                 # least random: same input -> (nearly) same output
-            # (If you switch to a "reasoning" model such as o-series, remove temperature:
-            #  those models don't accept it.)
-        )
-        usage = {"input_tokens": response.usage.input_tokens,
-                 "output_tokens": response.usage.output_tokens}
-        return response.output_parsed, usage
-
-    return extract
-
-
-# =============================================================================
-# 4. CACHE: save every LLM answer so each report is only sent once
-# =============================================================================
 
 def extract_report(doc: ParsedDocument, cache_dir: Path,
                    extractor: Extractor | None = None, model: str = CHAT_MODEL) -> ExtractedReport:
@@ -163,29 +132,12 @@ def extract_report(doc: ParsedDocument, cache_dir: Path,
     """
     if doc.doc_type != "lab_report":
         raise ValueError(f"{doc.doc_id} is a {doc.doc_type}, not a lab report")
-
-    cache_file = cache_dir / f"{doc.doc_id}.json"
-    if cache_file.exists():
-        saved = json.loads(cache_file.read_text(encoding="utf-8"))
-        # model_validate checks the saved JSON still fits the schema
-        return ExtractedReport.model_validate(saved["report"])
-
-    if extractor is None:
-        extractor = openai_extractor(model)
-    report, usage = extractor(doc.text)
-
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    cache_file.write_text(json.dumps({
-        "doc_id": doc.doc_id,
-        "model": model,
-        "usage": usage,
-        "report": report.model_dump(),   # model_dump turns the object into a plain dict
-    }, indent=2, ensure_ascii=False), encoding="utf-8")
-    return report
+    return cached_parse(doc.doc_id, doc.text, cache_dir, ExtractedReport,
+                        make_parser=lambda: extractor or openai_extractor(model), model=model)
 
 
 # =============================================================================
-# 5. STANDARDISE: convert to standard units in Python (never by the LLM)
+# 4. STANDARDISE: convert to standard units in Python (never by the LLM)
 # =============================================================================
 
 def _same_unit(a: str, b: str) -> bool:
