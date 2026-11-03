@@ -1,0 +1,52 @@
+{
+  "doc_id": "P001-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 4448,
+    "output_tokens": 264
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 5.6,
+        "previous": 5.4,
+        "detail": "Total cholesterol is now above the normal range."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "CREAT",
+        "kind": "sudden_change",
+        "value": 139.0,
+        "previous": 99.0,
+        "detail": "Creatinine has increased significantly."
+      },
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "K",
+        "kind": "after_medicine",
+        "value": 5.8,
+        "previous": 4.5,
+        "detail": "Potassium increased after starting perindopril."
+      },
+      {
+        "doc_id": "P001-LAB-2026-04-01",
+        "test_code": "HBA1C",
+        "kind": "trend_reversal",
+        "value": 6.7,
+        "previous": 7.4,
+        "detail": "HbA1c has improved after previously worsening."
+      },
+      {
+        "doc_id": "P001-LAB-2025-12-29",
+        "test_code": "UACR",
+        "kind": "worth_noting",
+        "value": 3.7,
+        "previous": 5.0,
+        "detail": "Urine albumin/creatinine ratio has decreased significantly."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "doc_id": "P002-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3588,
+    "output_tokens": 484
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2023-10-08",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.7,
+        "previous": null,
+        "detail": "Total Cholesterol is newly high at 6.7 mmol/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-01-07",
+        "test_code": "LDL",
+        "kind": "sudden_change",
+        "value": 3.2,
+        "previous": 4.6,
+        "detail": "LDL Cholesterol decreased significantly from 4.6 to 3.2 mmol/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-08-09",
+        "test_code": "LDL",
+        "kind": "after_medicine",
+        "value": 3.0,
+        "previous": 3.1,
+        "detail": "LDL Cholesterol decreased after the dose change of Atorvastatin."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "ALT",
+        "kind": "out_of_range",
+        "value": 71.0,
+        "previous": 57.0,
+        "detail": "ALT is newly high at 71 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "AST",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": 43.0,
+        "detail": "AST is newly high at 51 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "out_of_range",
+        "value": 241.0,
+        "previous": 193.0,
+        "detail": "Creatine Kinase is newly high at 241 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2026-01-08",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 5.6,
+        "previous": null,
+        "detail": "Fasting Glucose is newly high at 5.6 mmol/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "trend_reversal",
+        "value": 57.0,
+        "previous": 26.0,
+        "detail": "ALT has reversed trend, increasing from 26 to 57 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "AST",
+        "kind": "trend_reversal",
+        "value": 43.0,
+        "previous": 24.0,
+        "detail": "AST has reversed trend, increasing from 24 to 43 U/L."
+      }
+    ]
+  }
+}

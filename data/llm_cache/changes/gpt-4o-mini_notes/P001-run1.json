@@ -1,0 +1,52 @@
+{
+  "doc_id": "P001-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 5098,
+    "output_tokens": 293
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2023-06-30",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 10.1,
+        "previous": null,
+        "detail": "Fasting glucose is newly high at 10.1 mmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "CREAT",
+        "kind": "sudden_change",
+        "value": 139.0,
+        "previous": 96.0,
+        "detail": "Creatinine increased significantly from 96 µmol/L to 139 µmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2023-10-06",
+        "test_code": "HBA1C",
+        "kind": "after_medicine",
+        "value": 8.4,
+        "previous": 8.9,
+        "detail": "HbA1c decreased after starting Metformin."
+      },
+      {
+        "doc_id": "P001-LAB-2024-01-02",
+        "test_code": "HBA1C",
+        "kind": "trend_reversal",
+        "value": 7.6,
+        "previous": 8.4,
+        "detail": "HbA1c improved from 8.4% to 7.6%, reversing the previous trend."
+      },
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "K",
+        "kind": "worth_noting",
+        "value": 5.8,
+        "previous": 4.5,
+        "detail": "Potassium level is notably high at 5.8 mmol/L."
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "doc_id": "P003-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1832,
+    "output_tokens": 475
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.1,
+        "previous": null,
+        "detail": "Total cholesterol is newly high at 6.1 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "CHOL",
+        "kind": "trend_reversal",
+        "value": 5.0,
+        "previous": 6.1,
+        "detail": "Total cholesterol has reversed trend, decreasing from 6.1 to 5.0 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "TSH",
+        "kind": "out_of_range",
+        "value": 9.68,
+        "previous": null,
+        "detail": "TSH is newly high at 9.68 mIU/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "TSH",
+        "kind": "after_medicine",
+        "value": 7.72,
+        "previous": 2.1,
+        "detail": "TSH increased to 7.72 mIU/L after the dose change of Levothyroxine."
+      },
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "LDL",
+        "kind": "out_of_range",
+        "value": 4.0,
+        "previous": null,
+        "detail": "LDL cholesterol is newly high at 4.0 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "LDL",
+        "kind": "trend_reversal",
+        "value": 3.1,
+        "previous": 4.0,
+        "detail": "LDL cholesterol has reversed trend, decreasing from 4.0 to 3.1 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "FT4",
+        "kind": "out_of_range",
+        "value": 9.0,
+        "previous": null,
+        "detail": "Free T4 is newly low at 9.0 pmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "FT4",
+        "kind": "trend_reversal",
+        "value": 10.9,
+        "previous": 16.1,
+        "detail": "Free T4 has reversed trend, decreasing from 16.1 to 10.9 pmol/L."
+      }
+    ]
+  }
+}

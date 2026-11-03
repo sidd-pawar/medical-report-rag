@@ -1,0 +1,76 @@
+{
+  "doc_id": "P002-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3189,
+    "output_tokens": 393
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "out_of_range",
+        "value": 57.0,
+        "previous": 27.0,
+        "detail": "ALT is newly elevated above the normal range."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "sudden_change",
+        "value": 241.0,
+        "previous": 193.0,
+        "detail": "CK shows a significant increase."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "GLU_F",
+        "kind": "after_medicine",
+        "value": 5.6,
+        "previous": 5.4,
+        "detail": "Fasting glucose increased after stopping Atorvastatin."
+      },
+      {
+        "doc_id": "P002-LAB-2026-01-08",
+        "test_code": "EGFR",
+        "kind": "trend_reversal",
+        "value": 79.0,
+        "previous": 82.0,
+        "detail": "eGFR has decreased after previously improving."
+      },
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "AST",
+        "kind": "out_of_range",
+        "value": 43.0,
+        "previous": 24.0,
+        "detail": "AST is newly elevated above the normal range."
+      },
+      {
+        "doc_id": "P002-LAB-2023-10-08",
+        "test_code": "CHOL",
+        "kind": "worth_noting",
+        "value": 6.7,
+        "previous": null,
+        "detail": "Total cholesterol was high at the first test."
+      },
+      {
+        "doc_id": "P002-LAB-2023-10-08",
+        "test_code": "LDL",
+        "kind": "worth_noting",
+        "value": 4.6,
+        "previous": null,
+        "detail": "LDL cholesterol was high at the first test."
+      },
+      {
+        "doc_id": "P002-LAB-2023-10-08",
+        "test_code": "TRIG",
+        "kind": "worth_noting",
+        "value": 2.1,
+        "previous": null,
+        "detail": "Triglycerides were high at the first test."
+      }
+    ]
+  }
+}

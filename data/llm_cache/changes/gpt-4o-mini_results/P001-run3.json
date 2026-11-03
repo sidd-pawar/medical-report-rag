@@ -1,0 +1,52 @@
+{
+  "doc_id": "P001-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 4221,
+    "output_tokens": 307
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2023-06-30",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 10.1,
+        "previous": null,
+        "detail": "Fasting Glucose is newly high at 10.1 mmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2023-10-06",
+        "test_code": "HBA1C",
+        "kind": "sudden_change",
+        "value": 8.4,
+        "previous": 8.9,
+        "detail": "HbA1c decreased from 8.9% to 8.4%."
+      },
+      {
+        "doc_id": "P001-LAB-2024-01-02",
+        "test_code": "HBA1C",
+        "kind": "trend_reversal",
+        "value": 7.6,
+        "previous": 8.4,
+        "detail": "HbA1c has improved from 8.4% to 7.6%."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "EGFR",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": 72.0,
+        "detail": "eGFR is newly low at 51 mL/min/1.73m²."
+      },
+      {
+        "doc_id": "P001-LAB-2025-07-07",
+        "test_code": "CHOL",
+        "kind": "worth_noting",
+        "value": 4.2,
+        "previous": 5.6,
+        "detail": "Total Cholesterol decreased from 5.6 mmol/L to 4.2 mmol/L."
+      }
+    ]
+  }
+}

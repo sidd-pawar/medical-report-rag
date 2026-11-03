@@ -1,0 +1,52 @@
+{
+  "doc_id": "P003-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 2758,
+    "output_tokens": 266
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "TSH",
+        "kind": "out_of_range",
+        "value": 9.68,
+        "previous": null,
+        "detail": "TSH is newly above the normal range."
+      },
+      {
+        "doc_id": "P003-LAB-2024-04-10",
+        "test_code": "FT4",
+        "kind": "sudden_change",
+        "value": 11.2,
+        "previous": 9.0,
+        "detail": "FT4 increased significantly since the previous result."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "LDL",
+        "kind": "after_medicine",
+        "value": 3.1,
+        "previous": 4.0,
+        "detail": "LDL decreased after the dose change of Levothyroxine."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "TSH",
+        "kind": "trend_reversal",
+        "value": 7.72,
+        "previous": 2.1,
+        "detail": "TSH has worsened after previously improving."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "FT4",
+        "kind": "worth_noting",
+        "value": 10.9,
+        "previous": 16.2,
+        "detail": "FT4 decreased after a year of stable results."
+      }
+    ]
+  }
+}

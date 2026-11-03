@@ -1,0 +1,52 @@
+{
+  "doc_id": "P001-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 5098,
+    "output_tokens": 308
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2023-06-30",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 10.1,
+        "previous": null,
+        "detail": "Fasting glucose is newly high at 10.1 mmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "CREAT",
+        "kind": "sudden_change",
+        "value": 139.0,
+        "previous": 96.0,
+        "detail": "Creatinine increased significantly from 96 µmol/L to 139 µmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "EGFR",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": null,
+        "detail": "eGFR is newly low at 51 mL/min/1.73m²."
+      },
+      {
+        "doc_id": "P001-LAB-2025-07-07",
+        "test_code": "UACR",
+        "kind": "trend_reversal",
+        "value": 5.0,
+        "previous": 4.6,
+        "detail": "Urine albumin/creatinine ratio has worsened from 4.6 mg/mmol to 5.0 mg/mmol."
+      },
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "K",
+        "kind": "worth_noting",
+        "value": 5.8,
+        "previous": null,
+        "detail": "Potassium is high at 5.8 mmol/L, which may be related to perindopril."
+      }
+    ]
+  }
+}

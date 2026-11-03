@@ -1,0 +1,76 @@
+{
+  "doc_id": "P002-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 4366,
+    "output_tokens": 427
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2023-10-08",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.7,
+        "previous": null,
+        "detail": "Total cholesterol is newly high at 6.7 mmol/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "ALT",
+        "kind": "sudden_change",
+        "value": 71.0,
+        "previous": 57.0,
+        "detail": "ALT increased significantly from 57 U/L to 71 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "out_of_range",
+        "value": 241.0,
+        "previous": null,
+        "detail": "Creatine kinase is newly high at 241 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "AST",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": null,
+        "detail": "AST is newly high at 51 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-08-09",
+        "test_code": "LDL",
+        "kind": "after_medicine",
+        "value": 3.0,
+        "previous": 4.6,
+        "detail": "LDL cholesterol decreased after atorvastatin dose was increased."
+      },
+      {
+        "doc_id": "P002-LAB-2026-01-08",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 5.6,
+        "previous": null,
+        "detail": "Fasting glucose is newly high at 5.6 mmol/L."
+      },
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "trend_reversal",
+        "value": 57.0,
+        "previous": 26.0,
+        "detail": "ALT has reversed trend, increasing from 26 U/L to 57 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-05-12",
+        "test_code": "CK",
+        "kind": "trend_reversal",
+        "value": 121.0,
+        "previous": 241.0,
+        "detail": "Creatine kinase has reversed trend, decreasing from 241 U/L to 121 U/L."
+      }
+    ]
+  }
+}

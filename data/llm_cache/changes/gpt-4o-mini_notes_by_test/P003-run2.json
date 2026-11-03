@@ -1,0 +1,52 @@
+{
+  "doc_id": "P003-run2",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 2634,
+    "output_tokens": 291
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.1,
+        "previous": null,
+        "detail": "Total cholesterol is newly high at 6.1 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "TSH",
+        "kind": "sudden_change",
+        "value": 7.72,
+        "previous": 2.1,
+        "detail": "TSH increased significantly from 2.10 mIU/L to 7.72 mIU/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-04-10",
+        "test_code": "FT4",
+        "kind": "after_medicine",
+        "value": 11.2,
+        "previous": 9.0,
+        "detail": "Free T4 increased after starting levothyroxine."
+      },
+      {
+        "doc_id": "P003-LAB-2025-09-09",
+        "test_code": "TSH",
+        "kind": "trend_reversal",
+        "value": 3.08,
+        "previous": 7.72,
+        "detail": "TSH decreased back into range after previously being high."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "LDL",
+        "kind": "worth_noting",
+        "value": 3.1,
+        "previous": 4.0,
+        "detail": "LDL cholesterol decreased from 4.0 mmol/L to 3.1 mmol/L."
+      }
+    ]
+  }
+}

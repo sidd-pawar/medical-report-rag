@@ -1,0 +1,52 @@
+{
+  "doc_id": "P003-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 2634,
+    "output_tokens": 269
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.1,
+        "previous": null,
+        "detail": "Total cholesterol is newly above the normal range."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "TSH",
+        "kind": "sudden_change",
+        "value": 2.1,
+        "previous": 6.31,
+        "detail": "TSH decreased significantly from the previous result."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "TSH",
+        "kind": "after_medicine",
+        "value": 7.72,
+        "previous": 2.1,
+        "detail": "TSH increased after the patient started taking a calcium supplement."
+      },
+      {
+        "doc_id": "P003-LAB-2025-09-09",
+        "test_code": "TSH",
+        "kind": "trend_reversal",
+        "value": 3.08,
+        "previous": 7.72,
+        "detail": "TSH has improved and returned to within the normal range after previously being elevated."
+      },
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "LDL",
+        "kind": "worth_noting",
+        "value": 4.0,
+        "previous": null,
+        "detail": "LDL cholesterol is above the normal range."
+      }
+    ]
+  }
+}

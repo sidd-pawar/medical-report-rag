@@ -1,0 +1,52 @@
+{
+  "doc_id": "P002-run2",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3967,
+    "output_tokens": 291
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "out_of_range",
+        "value": 57.0,
+        "previous": 26.0,
+        "detail": "ALT level increased to 57 U/L, which is above the normal range."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "AST",
+        "kind": "sudden_change",
+        "value": 51.0,
+        "previous": 43.0,
+        "detail": "AST level increased from 43 U/L to 51 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "after_medicine",
+        "value": 241.0,
+        "previous": 193.0,
+        "detail": "CK level increased after atorvastatin was stopped and rosuvastatin was started."
+      },
+      {
+        "doc_id": "P002-LAB-2026-01-08",
+        "test_code": "EGFR",
+        "kind": "trend_reversal",
+        "value": 79.0,
+        "previous": 82.0,
+        "detail": "eGFR level decreased from 82 mL/min/1.73m² to 79 mL/min/1.73m² after previously improving."
+      },
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "TRIG",
+        "kind": "worth_noting",
+        "value": 1.5,
+        "previous": 1.6,
+        "detail": "Triglycerides have been consistently decreasing over the last tests."
+      }
+    ]
+  }
+}

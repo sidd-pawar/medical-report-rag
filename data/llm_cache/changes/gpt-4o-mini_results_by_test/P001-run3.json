@@ -1,0 +1,60 @@
+{
+  "doc_id": "P001-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3571,
+    "output_tokens": 306
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 5.6,
+        "previous": 5.4,
+        "detail": "Total cholesterol is now above the normal range."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "CREAT",
+        "kind": "sudden_change",
+        "value": 139.0,
+        "previous": 99.0,
+        "detail": "Creatinine has increased significantly."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "EGFR",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": 67.0,
+        "detail": "eGFR is now below the normal range."
+      },
+      {
+        "doc_id": "P001-LAB-2025-12-29",
+        "test_code": "UACR",
+        "kind": "trend_reversal",
+        "value": 3.7,
+        "previous": 5.0,
+        "detail": "Urine albumin/creatinine ratio has decreased after previously increasing."
+      },
+      {
+        "doc_id": "P001-LAB-2025-07-07",
+        "test_code": "LDL",
+        "kind": "after_medicine",
+        "value": 2.0,
+        "previous": 3.4,
+        "detail": "LDL cholesterol decreased after starting atorvastatin."
+      },
+      {
+        "doc_id": "P001-LAB-2026-04-01",
+        "test_code": "HB",
+        "kind": "worth_noting",
+        "value": 135.0,
+        "previous": 138.0,
+        "detail": "Haemoglobin has been gradually decreasing."
+      }
+    ]
+  }
+}

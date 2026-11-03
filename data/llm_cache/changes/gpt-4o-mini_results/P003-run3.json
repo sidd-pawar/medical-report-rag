@@ -1,0 +1,76 @@
+{
+  "doc_id": "P003-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 1956,
+    "output_tokens": 491
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "CHOL",
+        "kind": "out_of_range",
+        "value": 6.1,
+        "previous": null,
+        "detail": "Total Cholesterol is newly high at 6.1 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-02-12",
+        "test_code": "FT4",
+        "kind": "out_of_range",
+        "value": 9.0,
+        "previous": null,
+        "detail": "Free T4 is newly low at 9.0 pmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-04-10",
+        "test_code": "FT4",
+        "kind": "sudden_change",
+        "value": 11.2,
+        "previous": 9.0,
+        "detail": "Free T4 increased from 9.0 pmol/L to 11.2 pmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2024-06-14",
+        "test_code": "TSH",
+        "kind": "trend_reversal",
+        "value": 4.64,
+        "previous": 6.31,
+        "detail": "TSH decreased from 6.31 mIU/L to 4.64 mIU/L after previously worsening."
+      },
+      {
+        "doc_id": "P003-LAB-2025-03-11",
+        "test_code": "LDL",
+        "kind": "out_of_range",
+        "value": 3.1,
+        "previous": 4.0,
+        "detail": "LDL Cholesterol is newly high at 3.1 mmol/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "TSH",
+        "kind": "sudden_change",
+        "value": 7.72,
+        "previous": 2.1,
+        "detail": "TSH increased from 2.10 mIU/L to 7.72 mIU/L."
+      },
+      {
+        "doc_id": "P003-LAB-2025-06-13",
+        "test_code": "FT4",
+        "kind": "trend_reversal",
+        "value": 10.9,
+        "previous": 16.1,
+        "detail": "Free T4 decreased from 16.1 pmol/L to 10.9 pmol/L after previously improving."
+      },
+      {
+        "doc_id": "P003-LAB-2026-02-14",
+        "test_code": "TSH",
+        "kind": "worth_noting",
+        "value": 1.82,
+        "previous": 2.19,
+        "detail": "TSH is now at 1.82 mIU/L, approaching the normal range."
+      }
+    ]
+  }
+}

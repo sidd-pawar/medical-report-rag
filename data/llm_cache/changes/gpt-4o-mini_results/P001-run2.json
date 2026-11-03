@@ -1,0 +1,76 @@
+{
+  "doc_id": "P001-run2",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 4221,
+    "output_tokens": 471
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P001-LAB-2023-06-30",
+        "test_code": "GLU_F",
+        "kind": "out_of_range",
+        "value": 10.1,
+        "previous": null,
+        "detail": "Fasting Glucose is newly high at 10.1 mmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2023-10-06",
+        "test_code": "HBA1C",
+        "kind": "sudden_change",
+        "value": 8.4,
+        "previous": 8.9,
+        "detail": "HbA1c decreased from 8.9% to 8.4%."
+      },
+      {
+        "doc_id": "P001-LAB-2023-10-06",
+        "test_code": "GLU_F",
+        "kind": "after_medicine",
+        "value": 9.2,
+        "previous": 10.1,
+        "detail": "Fasting Glucose decreased after Metformin dose was increased."
+      },
+      {
+        "doc_id": "P001-LAB-2024-01-02",
+        "test_code": "HBA1C",
+        "kind": "trend_reversal",
+        "value": 7.6,
+        "previous": 8.4,
+        "detail": "HbA1c improved from 8.4% to 7.6%."
+      },
+      {
+        "doc_id": "P001-LAB-2024-07-01",
+        "test_code": "K",
+        "kind": "out_of_range",
+        "value": 5.8,
+        "previous": 4.5,
+        "detail": "Potassium is newly high at 5.8 mmol/L."
+      },
+      {
+        "doc_id": "P001-LAB-2025-01-02",
+        "test_code": "EGFR",
+        "kind": "out_of_range",
+        "value": 51.0,
+        "previous": 72.0,
+        "detail": "eGFR is newly low at 51 mL/min/1.73m²."
+      },
+      {
+        "doc_id": "P001-LAB-2025-09-29",
+        "test_code": "EGFR",
+        "kind": "trend_reversal",
+        "value": 58.0,
+        "previous": 64.0,
+        "detail": "eGFR improved from 64 to 58 mL/min/1.73m²."
+      },
+      {
+        "doc_id": "P001-LAB-2026-04-01",
+        "test_code": "EGFR",
+        "kind": "trend_reversal",
+        "value": 56.0,
+        "previous": 58.0,
+        "detail": "eGFR worsened from 58 to 56 mL/min/1.73m²."
+      }
+    ]
+  }
+}

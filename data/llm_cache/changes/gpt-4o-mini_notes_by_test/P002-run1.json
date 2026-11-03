@@ -1,0 +1,52 @@
+{
+  "doc_id": "P002-run1",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3967,
+    "output_tokens": 301
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "out_of_range",
+        "value": 57.0,
+        "previous": 26.0,
+        "detail": "ALT level increased to 57 U/L, which is above the normal range."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "sudden_change",
+        "value": 241.0,
+        "previous": 193.0,
+        "detail": "CK level increased significantly from 193 U/L to 241 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "ALT",
+        "kind": "after_medicine",
+        "value": 71.0,
+        "previous": 57.0,
+        "detail": "ALT level increased after atorvastatin was stopped."
+      },
+      {
+        "doc_id": "P002-LAB-2026-01-08",
+        "test_code": "EGFR",
+        "kind": "trend_reversal",
+        "value": 79.0,
+        "previous": 82.0,
+        "detail": "eGFR level decreased from 82 mL/min/1.73m² to 79 mL/min/1.73m² after previously improving."
+      },
+      {
+        "doc_id": "P002-LAB-2025-05-12",
+        "test_code": "LDL",
+        "kind": "worth_noting",
+        "value": 2.1,
+        "previous": 2.2,
+        "detail": "LDL cholesterol level is now at 2.1 mmol/L, which is below the previous level of 2.2 mmol/L."
+      }
+    ]
+  }
+}

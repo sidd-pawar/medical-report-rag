@@ -1,0 +1,52 @@
+{
+  "doc_id": "P002-run3",
+  "model": "gpt-4o-mini",
+  "usage": {
+    "input_tokens": 3967,
+    "output_tokens": 289
+  },
+  "report": {
+    "findings": [
+      {
+        "doc_id": "P002-LAB-2024-11-05",
+        "test_code": "ALT",
+        "kind": "out_of_range",
+        "value": 57.0,
+        "previous": 26.0,
+        "detail": "ALT level increased to 57 U/L, which is above the normal range."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "CK",
+        "kind": "sudden_change",
+        "value": 241.0,
+        "previous": 193.0,
+        "detail": "CK level increased significantly from 193 U/L to 241 U/L."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "ALT",
+        "kind": "after_medicine",
+        "value": 71.0,
+        "previous": 57.0,
+        "detail": "ALT level increased after atorvastatin was stopped and rosuvastatin was started."
+      },
+      {
+        "doc_id": "P002-LAB-2026-05-07",
+        "test_code": "LDL",
+        "kind": "trend_reversal",
+        "value": 2.0,
+        "previous": 2.1,
+        "detail": "LDL cholesterol level has reversed trend, decreasing from 2.1 mmol/L to 2.0 mmol/L after previously improving."
+      },
+      {
+        "doc_id": "P002-LAB-2025-02-04",
+        "test_code": "AST",
+        "kind": "worth_noting",
+        "value": 51.0,
+        "previous": 43.0,
+        "detail": "AST level increased to 51 U/L, which is above the normal range."
+      }
+    ]
+  }
+}
